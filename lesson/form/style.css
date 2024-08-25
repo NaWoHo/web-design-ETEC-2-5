@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --content-color:#F2F2F2;
+    --facebook-color:#5770A6;
+    --twitter-color:#6DB7EF;
+    --google-color:#E06555;
+    --main-font:'poppins';
+    --login-color:#29B581;
+    --button-color:#666666;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    font-size: 20px;
+}
+.container {
+    width: 90%;
+    height: 80vh;
+    /* border: 2px solid red; */
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+}
+.container h1 {
+    font-size: 2em;
+}
+.content {
+    position: absolute;
+    background-color: var(--content-color);
+    width: 95%;
+    height: 85%;
+    border-radius: 10px;
+}
+.top-content h2{
+    text-align:center;
+    margin-top: 60px;
+    font-size: 1.5em;
+}
+.main-content {
+/* background-color: yellow; */
+width: 100%;
+height: 45vh;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+}
+.main-content .social {
+/* background-color: red; */
+width: 45%;
+height: 70%;
+padding: 10px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+.main-content .option {
+    /* background-color: red; */
+    width: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.option .line-up {
+    width: 4px;
+    height: 100px;
+    background-color:var(--button-color);
+    margin: 0 auto;
+}
+.option .box {
+    width: 50px;
+    height: 50px;
+    border: 3px solid var(--button-color);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.option .line-down {
+    width: 4px;
+    height: 100px;
+    background-color:var(--button-color);
+    margin: 0 auto;
+    position: relative;
+}
+.main-content .login-form {
+    /* background-color: red; */
+    width: 45%;
+    height: 70%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.social .facebook {
+    width: 70%;
+    height: 30%;
+    background-color: var(--facebook-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.social i, .social a {
+    color: white;
+    margin-left: 10px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.social .twitter {
+    width: 70%;
+    height: 30%;
+    background-color: var(--twitter-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.social .google {
+    width: 70%;
+    height: 30%;
+    background-color: var(--google-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.social .facebook,
+.social .twitter,
+.social .google {
+    cursor: pointer;
+}
+.login-form input {
+    width: 90%;
+    height: 30%;
+    border: none;
+    border-radius: 10px;
+}
+.login-form .username {
+    padding-left: 10px;
+}
+.login-form .password {
+    padding-left: 10px;
+}
+.login-form button {
+    width: 90%;
+    height: 30%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 0.5 #333;
+}
+.login-form .submit {
+    color: white;
+    background-color: #29B581;
+    cursor: pointer;
+}
+.login-form .submit a {
+    text-decoration: none;
+    color: white;
+}
+.button-content {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--button-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.button-content a {
+    text-decoration: none;
+    color: white;
+}

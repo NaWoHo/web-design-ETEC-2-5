@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .header {
+    width: 100%;
+    height: 5vh;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: red;
+}
+.content {
+    width: 100%;
+    height: 100vh;
+} */
+
+.container {
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    display: flex;
+    gap: 20px;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    flex-flow: wrap column;
+    align-content: center;
+
+}
+.container .box {
+    width: 24%;
+    height: 10%;
+    background-color: red;
+}

@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 90%;
+    height: 60vh;
+    background-color: red;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 10px;
+}
+.content-box {
+    background-color: blue;
+}
+.container .content-box:nth-child(1){
+    grid-column: 1 / span 2;
+
+    
+}
+/* .container .content-box:nth-child(2) {
+    grid-column: 1 / span 2;
+}  */

@@ -1,0 +1,7 @@
+body {
+    background-color: rgb(123, 123, 123);
+}
+p {
+    display: inline-block;
+    width: 90%;
+}

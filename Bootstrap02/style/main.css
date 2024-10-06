@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanuman';
+}
+body {
+    overflow-x: hidden;
+
+}
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+.navbar-container {
+    height: 80px;
+}
+.navbar-menu li{
+    align-items: center;
+    padding: 28px 20px;
+}
+.navbar-menu li a {
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    color: white;
+}
+.navbar-menu li a::before,
+a::after {
+    content: "";
+    width: 50%;
+    height: 4px;
+    position: absolute;
+}
+.navbar-menu li a::before {
+    bottom: 0;
+    left: 0;
+    background-color: brown;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .4s;
+}
+.navbar-menu li a::after {
+    bottom: 0;
+    right: 0;
+    background-color: gray;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: .4s;
+}
+.navbar-menu li:hover a::before,
+.navbar-menu li:hover a::after {
+    transform: scaleX(100%);
+    transition: .4s;
+}
+.hero-container {
+    height: 100vh;
+    position: relative;
+
+}
+.hero-container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(/Bootstrap02/images/7e0cfcb2-ab92-4a48-8c77-d7a9249ae48b.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+}
+.hero-text-container {
+    /* background-color: black; */
+    z-index: 2;
+    top: 20%;
+    left: 2%;
+}
+.hero-text-container h1 {
+    font-size: 50px;
+    color: white;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.span {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    margin-top: 8px;
+}
+button {
+    width: 150px;
+    height: 40px;
+    border: none;
+}
+.btn-readmore {
+    background-color: white;
+    color: black;
+    transition: .4s;
+}
+.btn-readmore:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    transition: .4s;
+}
+.btn-author {
+    opacity: .5;
+    background-color: white;
+    color: black;
+    transition: .4s;
+}
+.btn-author:hover {
+    opacity: 1;
+    background-color: red;
+    color: white;
+    transition: .4s;
+}
+
+/*--- Abs-Container ---*/
+.abs-container {
+    height: auto;
+}
+.trending-new {
+    height: 400px;
+
+}
+.card-box {
+    height: 100%;
+}
+.label {
+    width: fit-content;
+    height: 25px;
+    background-color: grey;
+}
+.label:hover p{
+    color: red;
+}
+.text-desc {
+    height: 100px;
+}
+.text-desc:hover {
+    text-decoration: underline;
+}
+.card-container:hover .card-image {
+    transform: scale(1.09);
+    transition: .4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 575px) {
+    .logo {
+        width: 180px;
+        margin-left: 120px !important;
+        margin-top: 10px;
+    }
+    .bar {
+        margin-left: 98%;
+        margin-top: 26px;
+        font-size: 30px !important;
+    }
+    .search {
+        font-size: 30px !important;
+        margin-left: 10px;
+    }
+    .hero-container h1 {
+        font-size: 2.5rem;
+    }
+    .abs-container {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 100%;
+    }
+    .abs-container img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .text-desc {
+        height: 65px;
+    }
+    .trending-new h3{
+        font-size: 1rem;
+    }
+    .trending-new button{
+        width: 15%;
+        height: 40%;
+        font-size: .8rem;
+    }
+}
+
+
+
+
+@media (min-width: 576px) and (max-width:767px) {
+    .logo {
+        width: 150px;
+        margin-left: 60px;
+    }
+    .bar {
+    margin-left: 98%;
+    margin-top: 28px;
+    }
+    
+    .hero-text-container {
+        margin-top: 0;
+    }
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .abs-container img {
+        width: 100%;
+        height: 70%;
+    }
+    .logo {
+        width: 150px;
+        margin-left: 50px;
+    }
+    .bar {
+    margin-left: 98%;
+    margin-top: 28px;
+    }
+    .text-desc {
+        height: 65px;
+    }
+    .trending-new h3{
+        font-size: 1.4rem;
+    }
+    .trending-new button{
+        width: 15%;
+        height: 40%;
+        font-size: .8rem;
+    }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .abs-container img {
+        width: 100%;
+        height: 90%;
+    }
+    .logo {
+        margin-left: 40px;
+        width: 150px;
+    }
+    .bar {
+        margin-left: 98%;
+        margin-top: 28px;
+    }
+    /* .abs-container {
+        margin-bottom: 15%;
+    } */
+    .text-desc {
+        height: 65px;
+    }
+    .trending-new h3{
+        font-size: 1.4rem;
+    }
+    .trending-new button{
+        width: 10%;
+        font-size: .8rem;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+}
